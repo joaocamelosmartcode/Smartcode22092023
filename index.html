@@ -35,6 +35,8 @@
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
     <link rel="stylesheet" href="./main.css" />
+    
+    
     <script src="assets/js/smtp.js"></script>
     <script type="text/javascript">
         function sendEmail() {
@@ -46,7 +48,7 @@
                 From: "info@smartcode.pt",
                 Subject: "Sending Email using javascript",
                 Body: "Well that was easy!!",
-            })
+                })
                 .then(function (message) {
                     alert("mail sent successfully")
                 });
