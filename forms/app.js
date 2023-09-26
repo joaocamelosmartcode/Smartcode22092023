@@ -29,7 +29,7 @@ class FormSubmit {
   onSubmission(event) {
     event.preventDefault();
     event.target.disabled = true;
-    event.target.innerText = "Enviando...";
+    event.target.innerText = "A Enviar...";
   }
 
   async sendForm(event) {
@@ -59,7 +59,9 @@ class FormSubmit {
 const formSubmit = new FormSubmit({
   form: "[data-form]",
   button: "[data-button]",
-  success: "<h1 class='success'>Mensagem enviada!</h1>",
-  error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
+  success: "<div class="my-3"><div class="loading">A carregar..</div><div class="sent-message">A sua mensagem foi enviada. Obrigado!</div></div>",
+
+
+  error: "<div class="error-message"></div>",
 });
 formSubmit.init();
