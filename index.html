@@ -440,34 +440,44 @@
 
         <div class="row mt-5 justify-content-center">
           <div class="col-lg-10">
-            <form action="https://formspree.io/f/xgejplaw" method="post" role="form"
-              class="php-email-form" data-form></form>
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="O seu nome" required>
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="O seu e-mail" required>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="assunto" id="subject" placeholder="Assunto" required>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="mensagem" id="mensagem" rows="5" placeholder="Mensagem"
-                required></textarea>
-            </div>
-            <div class="text-center">
-              <div class="text-center">
-                <button type="submit" data-button>Enviar e-mail.</button>
-              </div>
-
-            </div>
-            </form>
+            
           </div>
         </div>
       </div>
     </section><!-- End Contact Section -->
+
+    <section>
+      <div class="container">
+          <form action="https://formspree.io/f/xgejplaw" method="POST">
+              <div class="form-group">
+                  <label for="Nome">Nome</label>
+                  <input type="text" name="name" placeholder=" O seu Nome">
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" placeholder=" O seu email">
+              </div>
+              <div class="form-group">
+                  <label for="assunto">Assunto</label>
+                  <input type="text" name="assunto" placeholder=" O Assunto">
+              </div>
+              <div class="form-group">
+                  <label for="mensagem">Mensagem</label>
+                  <textarea name="message" id="" cols="30" rows="10" placeholder=" A Mensagem"></textarea>
+              </div>
+              <div class="form-group">
+                  <label for="">Tipo de Mensagem a enviar?</label>
+                  <select name="service" id="select"> 
+                      <option value="sugestão">Sugestão</option>
+                      <option value="melhoria">Melhoria</option>
+                      <option value="reclamação">Reclamação</option>
+                  </select>
+              </div>
+              <button type="submit" id="btn">Enviar</button>
+          </form>
+      </div>
+  </section>
+
 
   </main><!-- End #main -->
 
