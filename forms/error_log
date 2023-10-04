@@ -1,0 +1,2 @@
+[14-Sep-2023 05:04:02 UTC] PHP Warning:  Undefined array key "HTTP_X_REQUESTED_WITH" in /home/smartcod/public_html/assets/vendor/php-email-form/php-email-form.php on line 117
+[14-Sep-2023 05:04:02 UTC] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in /home/smartcod/public_html/assets/vendor/php-email-form/php-email-form.php on line 117
